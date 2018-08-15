@@ -1,0 +1,110 @@
+
+/*Rule of thumb*/
+
+*{  
+    margin: 0px;
+    padding: 0px;  
+}
+
+/*--------------------------------*/
+
+h1{font: bold 20px verdana, sans-serif;}
+h2{font: bold 14px verdana, sans-serif;}
+
+/*-------A veces el navegador no entiende como acomodar las cajas...------------*/
+
+header, section, aside, nav, footer, figure, article, figcaption, hgroup { display:block; }
+
+/*--------Primer elemento para dar estilo----------*/
+
+body{text-align: center;}
+
+/*--------Creando las cajas------------------------*/
+
+#agrupar{
+    background-color: burlywood;
+    width: 1500px;
+    height: 700px;
+    margin: 15px auto; /*top, right, bottom, left*/
+    text-align: left;
+}
+
+#cabecera{
+    background: #FFFBB9;
+    border: 5px outset #999999; /*dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+    padding: 20px;
+    text-align: center;
+}
+
+#menu{
+    padding: 5px 15px;
+    background: #CCCCCC;
+    border:  5px groove whitesmoke;
+    text-align: center;
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 14px verdana, sans-serif;
+}
+
+#seccion{
+    float: left;
+    width: 1050px;
+    margin: 10px 2px 0px;
+    /*background-color: aquamarine;*/
+}
+
+#columna{
+    float: right;
+    width: 400px;
+    margin: 10px 0px;
+    padding: 20px;
+    /*background-color: coral;*/ 
+    text-align: right;
+}
+
+#pie{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px groove #999999;
+}
+
+/*Formato de Contenido*/
+
+article{
+    background: #FFFBBC;
+    border: 2px dotted #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+article footer{
+    text-align: right;
+}
+
+time{
+    color: blue;
+}
+
+figcaption{
+    font: italic 14px verdana, sans-serif;
+}
+
+blockquote{
+    font: italic 18px cambria;
+}
+
+/*Nuevos Selectores*/
+blockquote.cabeza ~ blockquote{
+    padding: 5% 0% 5% 0%;
+}
+
+/* div{
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+     box-sizing: border-box; 
+} */
