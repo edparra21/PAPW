@@ -8,8 +8,8 @@
 
 /*--------------------------------*/
 
-h1{font: bold 20px verdana, sans-serif;}
-h2{font: bold 14px verdana, sans-serif;}
+h1{font: bold 30px 'Times New Roman'; margin: auto;}
+h2{font: bold 20px 'Times New Roman'; margin: 2% auto;}
 
 /*-------A veces el navegador no entiende como acomodar las cajas...------------*/
 
@@ -22,15 +22,15 @@ body{text-align: center;}
 /*--------Creando las cajas------------------------*/
 
 #agrupar{
-    background-color: burlywood;
-    width: 1500px;
-    height: 700px;
+    background-color: rgb(218, 199, 199);
+    width: auto;
+    height: auto;
     margin: 15px auto; /*top, right, bottom, left*/
     text-align: left;
 }
 
 #cabecera{
-    background: #FFFBB9;
+    background: rgb(255, 243, 204);
     border: 5px outset #999999; /*dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
     padding: 20px;
     text-align: center;
@@ -38,7 +38,7 @@ body{text-align: center;}
 
 #menu{
     padding: 5px 15px;
-    background: #CCCCCC;
+    background: rgb(255, 243, 204);
     border:  5px groove whitesmoke;
     text-align: center;
 }
@@ -54,6 +54,10 @@ body{text-align: center;}
     width: 1050px;
     margin: 10px 2px 0px;
     /*background-color: aquamarine;*/
+}#seccion article{
+    text-align: justify;
+}#seccion header{
+    margin-bottom: 3%;
 }
 
 #columna{
@@ -63,6 +67,18 @@ body{text-align: center;}
     padding: 20px;
     /*background-color: coral;*/ 
     text-align: right;
+}#columna table{
+    padding: 0% 20%;
+}#columna figure{
+    padding-bottom: 30px;
+}
+
+#foto img{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+}#foto figcaption{
+    text-align: center;
 }
 
 #pie{
@@ -70,12 +86,14 @@ body{text-align: center;}
     text-align: center;
     padding: 20px;
     border-top: 2px groove #999999;
+}#pie div{
+    float: left;
 }
 
 /*Formato de Contenido*/
 
 article{
-    background: #FFFBBC;
+    background: rgb(255, 255, 255);
     border: 2px dotted #999999;
     padding: 20px;
     margin-bottom: 15px;
@@ -97,9 +115,6 @@ blockquote{
 }
 
 /*Nuevos Selectores*/
-blockquote.cabeza ~ blockquote{
-    padding: 5% 0% 5% 0%;
-}
 
 /* div{
     width: 100px;
