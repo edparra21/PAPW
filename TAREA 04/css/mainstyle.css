@@ -1,0 +1,66 @@
+/*Main CSS*/
+
+/*Rule of thumb*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Initialize*/
+body{
+    height: 125%;
+    background-image: linear-gradient(rgb(255,255,255),rgb(63, 63, 63));
+    background-color: #cccccc;
+    text-align: center;
+}
+
+h1{
+    font: bold 60px 'Times New Roman'; 
+    margin: 20px 20px; 
+    padding-top: 20px;
+    width: 97%; height: 10%; 
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(65, 65, 65));
+}
+
+#menu{
+    background: rgb(228, 228, 228);
+}#menu li{
+    font-size: 20px;
+    margin: 0px 20px 0px 10px;
+    padding: 10px auto;
+    list-style: none;
+    display: inline-block;
+    width: 20%;
+    height: 2%;
+    text-align: center;
+    border: 2px dotted black;
+    padding: 5px;
+}
+
+
+li:hover{
+    background: greenyellow;
+    cursor: pointer;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+#seccion{
+    margin: 20px;
+}#seccion figure{
+    padding: 20px;
+}
+
+#pie{
+    clear: both;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-style: italic;
+}

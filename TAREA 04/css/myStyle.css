@@ -1,0 +1,143 @@
+
+/*Rule of thumb*/
+
+*{  
+    margin: 0px;
+    padding: 0px;  
+}
+
+/*--------------------------------*/
+
+h1{font: bold 30px 'Times New Roman'; margin: auto;}
+h2{font: bold 20px 'Times New Roman'; margin: 2% auto;}
+tr{font-size: 18px;}
+tr:nth-child(even){background: rgb(167, 167, 167);}
+tr:nth-child(odd){background:rgb(190, 182, 255); font-style: italic;}
+tr:nth-child(1){text-align: left;}
+
+/*-------A veces el navegador no entiende como acomodar las cajas...------------*/
+
+header, section, aside, nav, footer, figure, article, figcaption, hgroup { display:block; }
+
+/*--------Primer elemento para dar estilo----------*/
+
+body{
+    text-align: center;
+    height: 100%;
+}
+
+/*--------Creando las cajas------------------------*/
+
+#agrupar{
+    background-color: rgb(218, 199, 199);
+    width: auto;
+    height: auto;
+    margin: 15px auto; /*top, right, bottom, left*/
+    text-align: left;
+}
+
+#cabecera{
+    background: rgb(255, 243, 204);
+    border: 5px outset #999999; /*dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden*/
+    padding: 20px;
+    text-align: center;
+}
+
+#menu{
+    padding: 5px 15px;
+    background: rgb(255, 243, 204);
+    border:  5px groove whitesmoke;
+    text-align: center;
+    position: sticky;
+}
+#menu li{
+    width: 10%;
+    height: 10px;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    font: bold 14px verdana, sans-serif;
+
+} 
+
+li a:hover{
+    background-color: rgb(129, 221, 0);
+}
+
+#seccion{
+    float: left;
+    width: 1050px;
+    margin: 10px 2px 0px;
+    opacity: 0.6;
+    /*background-color: aquamarine;*/
+}#seccion article{
+    text-align: justify;
+}#seccion header{
+    margin-bottom: 3%;
+}
+
+#columna{
+    float: right;
+    width: 400px;
+    margin: 10px 0px;
+    padding: 20px;
+    /*background-color: coral;*/ 
+    text-align: right;
+}#columna table{
+    
+    width: 100%;
+}#columna figure{
+    padding-bottom: 30px;
+}
+
+#foto img{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+}#foto figcaption{
+    text-align: center;
+}
+
+#pie{
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px groove #999999;
+}#pie div{
+    float: left;
+}
+
+/*Formato de Contenido*/
+
+article{
+    background: rgb(255, 255, 255);
+    border: 2px dotted #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+article footer{
+    text-align: right;
+}
+
+time{
+    color: blue;
+}
+
+figcaption{
+    font: italic 14px verdana, sans-serif;
+}
+
+blockquote{
+    font: italic 18px cambria;
+}
+
+/*Nuevos Selectores*/
+
+/* div{
+    width: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+     box-sizing: border-box; 
+} */
