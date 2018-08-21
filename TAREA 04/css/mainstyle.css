@@ -4,12 +4,17 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 
 /*Initialize*/
 body{
     height: 125%;
-    background-image: linear-gradient(rgb(255,255,255),rgb(63, 63, 63));
+    background-image: url("../img/mbg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    /* background-image: linear-gradient(rgb(255,255,255),rgb(63, 63, 63)); */
     background-color: #cccccc;
     text-align: center;
 }
@@ -54,6 +59,7 @@ li a{
     margin: 20px;
 }#seccion figure{
     padding: 20px;
+    height: 50%;
 }
 
 #pie{
