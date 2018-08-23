@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(71, 197, 255);
+}
+
+form {
+    text-align: left;
+    padding-left: 10%;
+}form input{
+    
+    width: 10%;
+}
+
+fieldset{
+    margin: 10% auto;
+    border: outset;
+    width: 50%;
+}
