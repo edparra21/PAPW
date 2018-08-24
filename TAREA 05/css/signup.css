@@ -5,7 +5,7 @@
 
 body{
     text-align: center;
-    background-color: rgb(71, 197, 255);
+    /* background-color: rgb(71, 197, 255); */
 }
 
 form {
@@ -13,11 +13,41 @@ form {
     padding-left: 10%;
 }form input{
     
-    width: 10%;
+    width: 30%;
+    margin: 20px 0px auto;
+}
+
+.radiobtn{
+    margin-left: -50px;
+    border: 2px solid black;
 }
 
 fieldset{
-    margin: 10% auto;
+    margin: 10% auto 0px auto;
     border: outset;
-    width: 50%;
+    width: 80%;
+    float: left;
+    clear: both;
+    background-color: rgb(71, 197, 255);
+}
+
+.sangria{
+    margin-left: 35px;
+}
+
+.container{
+    background-color: white;
+}
+
+.phonenumber{
+    appearance: none;
+    
+}
+
+footer{
+    float: center;
+    clear: both;
+    height: 30%;
+}footer input{
+    margin: 10%;
 }
