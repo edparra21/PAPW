@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgba(60, 0, 83, 0.8);
+}
+
+#title{
+    font: 100px 'BadWeather', verdana, sans-serif;
+    background: -moz-linear-gradient(left, rgba(60, 0, 83, 1),rgba(0,0,0,0));
+    background: -webkit-linear-gradient(left, rgba(60, 0, 83, 1),rgba(0,0,0,0));
+    background: linear-gradient(left,rgba(60, 0, 83, 1), rgba(0,0,0,0));
+    width: 40%;
+    color: black;
+    text-emphasis-color: black;
+    
+    -moz-border-radius: 25px;
+    -webkit-border-radius:25px;
+    border-radius: 25px;
+    
+    -moz-text-shadow: rgba(0,0,0,0.7) 20px 20px 5px;
+    -webkit-text-shadow: rgba(0,0,0,0.7) 20px 20px 5px;
+    text-shadow: rgba(0, 0, 0, 0.7) 20px 20px 5px;
+    
+    transform: translateY(-35px) translateX(-180px);
+    text-align: center;
+
+}
+
+.jumbotron{
+    height: 23%;
+    position: sticky;
+    background-image: url('../img/logoFMM2.png');
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 90%;
+    background-position-y: 40%;
+}
+
+
+
+#columna1{
+    display: block;
+    margin-left: 20px;
+}
+#columna2{
+    display: block;
+    margin-left: 60px;
+}
+#columna3{
+    display: block;
+    margin-left: 60px;
+}
+
+#transparent{
+    opacity: 0;
+}
+
+#meses{
+    margin-right: 0px;
+    width: 50%;
+}
+#edad{
+   margin-right: -60px;
+    width: 30%;
+    clear: right;
+}
+
+form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 5px;
+    height: 3%;
+}
+
+.row{
+    transform: translateX(20%);
+}
+
+
+
+#pie{
+    /* background-color: gray; */
+    float: right;
+    margin-right: 40px;
+}#pie div{
+    transform: translateX(-15%) translateY(300%);
+
+}
+
+
+
+
+/*Customized Fonts*/
+@font-face{
+    font-family: 'BadWeather';
+    src: url('../fonts/badweather.ttf');
+}
