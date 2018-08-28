@@ -8,7 +8,8 @@ body{
     text-align: center;
     background-image: url('../img/logoFMM2.png');
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 95%;
+    background-position-y: 10%;
     background-color: greenyellow;
 }
 
@@ -22,6 +23,20 @@ body{
     -moz-text-shadow: rgba(0,0,0,0.7) 20px 20px 5px;
     -webkit-text-shadow: rgba(0,0,0,0.7) 20px 20px 5px;
     text-shadow: rgba(0, 0, 0, 0.7) 20px 20px 5px;
+}
+
+#field{
+    width: 50%;
+    transform: translateX(50%);
+    font: bold;
+}
+
+#contain{
+    margin-top: 10%;
+}
+
+button{
+    margin-top: 5%;
 }
 
 

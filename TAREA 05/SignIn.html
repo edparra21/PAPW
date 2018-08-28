@@ -26,13 +26,15 @@
                 <label for="text" class="lbl_pss">password:</label> -->
                 <fieldset id="field">
                     <legend>Sign In</legend>
-                     Username: <input type="text" name="user" id="username" required>
-                    Password: <input type="password" name="contra" id="pass" required>
-                    <input type="button" value="Sign In" id="signin">
-                </fieldset>
-                
+                    <div id="contain">
+                        Username: <input type="text" name="user" id="username" class="form-control" required>
+                    </div>
+                    <div id="contain">
+                        Password: <input type="password" name="contra" id="pass" class="form-control" required>
+                    </div>
+                    <button class="btn btn-warning">Sign In</button>
+                </fieldset>        
             </form>
-
         </section>
         <footer id="pie">
                 <a href="signup.html" target="_blank">Not a member? clic here</a>
