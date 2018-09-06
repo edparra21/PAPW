@@ -50,7 +50,7 @@ public class Tarea09HosueTour {
                 DinningRoom();
                 break;
             case 3:
-                Bathroom(1);
+                Bathroom(userInput);
                 break;
             case 4:
                 Outside();
@@ -73,9 +73,49 @@ public class Tarea09HosueTour {
     
     public static void SecondFloor()
     {
-        System.out.println("Estas en la segunda planta.");
+        System.out.println("Estas en la segunda planta.\nA donde quieres ir ahora?\n1.Cuarto de Pato 2.Cuarto de Wendy 3.Baño 4.Bajar a Primer Piso");
+        userInput = scanner.nextInt();
+        switch(userInput)
+        {
+            case 1:
+                case2:
+                BedRooms(userInput);
+                break;
+            case 3:
+                Bathroom(userInput);
+                break;
+             
+                
+        }
     }
-    
+    public static void BedRooms(int roomPar)
+    {
+        if(roomPar==1)
+        {
+            System.out.println("Estas en mi cuarto! Que quieres hacer?\n1.Abrir el balcon 2. acostarte 3.Salir del cuarto");
+            userInput = scanner.nextInt();
+            scanner.nextLine();
+            switch(userInput)
+            {
+                case 1:
+                    
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+                    SecondFloor();
+                    break;    
+            }
+        }
+        else
+        {
+            System.out.println("Estas en el cuarto de Wendy. Am... okay, ya salte.\n 1.Salir del cuarto 2.Quedarse en el cuarto");
+            userInput = scanner.nextInt();
+            scanner.nextLine();
+        }
+            
+    }
     public static void DinningRoom()
     {
         System.out.println("Estas es el Comedor! ");
@@ -83,13 +123,22 @@ public class Tarea09HosueTour {
     
     public static void Bathroom(int floorPar)
     {
-        if(floorPar == 1)
+        switch(floorPar)
         {
-            System.out.println("Estas en el baño del primer piso.");
-        }
-        else if(floorPar == 2)
-        {
-            System.out.println("Estas en el baño del segundo piso.");
+            case 1:
+                System.out.println("Estas en el baño del primer piso. Sal cuando estés listo.\n 1.Salir del Baño");
+                userInput = scanner.nextInt();
+                scanner.nextLine();
+                if(userInput==1)
+                    Inside();
+            break;
+            case 2:
+                System.out.println("Estas en el baño del segundo piso.");
+                userInput = scanner.nextInt();
+                scanner.nextLine();
+                if(userInput == 2)
+                    SecondFloor();
+            break;
         }
             
     }
