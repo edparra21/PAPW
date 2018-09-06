@@ -18,10 +18,10 @@ public class Tarea09HosueTour {
      */
     static Scanner scanner = new Scanner(System.in);
     static int userInput = 0;
-    static boolean reset = true;
+    static boolean reset_ = true;
     public static void main(String[] args) {
         // TODO code application logic here
-        while(reset)
+        while(reset_)
         {
             System.out.println("Bienvenido! Entra.\n1.Entrar 2.Quedarse afuera");
         userInput = scanner.nextInt();
@@ -57,6 +57,55 @@ public class Tarea09HosueTour {
                 break;
         }
     }
+    public static void DinningRoom()
+    {
+        System.out.println("Estas es el Comedor! Quieres:\n1.Ir a la Cocina 2. Regresar a sala anterior");
+        userInput = scanner.nextInt();
+        scanner.nextLine();
+        switch(userInput)
+        {
+            case 1:
+                Kitchen();
+                break;
+            case 2:
+                Inside();
+                break;
+            default:
+                System.out.println("Esa no es una opcion, intenta de nuevo");
+                break;
+        }
+    }
+    public static void Kitchen()
+    {
+        System.out.println("Estas en la cocina, qué vas a preparar de comer!?\n 1.Salir al Patio 2. Regresar a sala anterior");
+        userInput = scanner.nextInt();
+        scanner.nextLine();
+        switch(userInput)
+        {
+            case 1:
+                Patio();
+                break;
+            case 2:
+                DinningRoom();
+                break;
+        }
+    }
+    public static void Patio()
+    {
+        boolean reset = false;
+        do{
+        System.out.println("Eh... Preferiria que no salieramos al patio... no he limpiado la popo de mi perro...\n1.Regresar a sala anterior");
+        userInput = scanner.nextInt();
+        scanner.nextLine();
+        if(userInput!=1)
+        {
+            System.out.println("Aw cmon'! huele mal aquí!");
+            reset = !reset;
+        }
+        else
+            Kitchen();
+        }while(reset);
+    }
     public static void Outside()
     {
         System.out.println("¿Estas seguro que no quieres entrar?.\n1.Si 2.No");
@@ -64,7 +113,7 @@ public class Tarea09HosueTour {
         scanner.nextLine();
         if(userInput == 1)
         {
-            reset= !reset;
+            reset_= !reset_;
             return;
         }
         
@@ -115,10 +164,6 @@ public class Tarea09HosueTour {
             scanner.nextLine();
         }
             
-    }
-    public static void DinningRoom()
-    {
-        System.out.println("Estas es el Comedor! ");
     }
     
     public static void Bathroom(int floorPar)
