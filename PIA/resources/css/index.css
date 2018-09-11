@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header, section, nav, aside, footer{
+    display: block;
+}
+/* NavBar */
+    
+    /* Tags */
+        nav{
+            background-color: rgba(158, 95, 0, 0.541);
+        }
+    /* Identificators */
+    #sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        min-height: 100vh;
+    }
+    
+    #sidebar.active {
+        margin-left: -250px;
+    }
+    /* Classes */
+        .wrapper {
+            display: flex;
+            width: 100%;
+            align-items: stretch;
+        }
+    /* ------- */
+        
+        
+/* Section 1 */
+        /* Tags */
+           
+        /* Identificators */
+            
+        /* Classes */
+            #home{
+                background: gray;
+                background-image: url('../img/logoFMM2.png');
+                /* background-repeat: no-repeat; */
+                background-position-x: 12em;
+                background-position-y: -2em;
+                background-size: 23%;
+            }
+        /* ------- */
+    /* ------- */
+/* ------- */
+/* Section 2 */
+        /* Tags */
+           
+        /* Identificators */
+        #recent-products{
+            background-image: url('../img/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        /* Classes */
+        .card {
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
+            /* width: 25%;
+            margin: 20px; */
+            /* float: left; */
+            /* margin-left: 80px; */
+            margin-bottom: 25px;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgb(148, 71, 0);
+            cursor: pointer;
+        }
+        
+        .card-content {
+            background: rgba(129, 52, 0, 0.541);
+            padding: 2px 8px;
+            float: left;
+        }
+
+        /* ------- */
+    /* ------- */
+/* ------- */
+
+

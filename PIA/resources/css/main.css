@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+}
+
+header, nav, section, aside, footer{
+    display: block;
+}
+
+/*NAVBAR*/
+    /* Tags */
+
+    /* ----------------- */
+
+    /* ID's */
+
+    /* ----------------- */
+    /* Classes */
+        .topnav {
+            /* overflow: hidden; */
+            background-color:rgba(120, 0, 131, 0.233);
+            position: fixed;
+        }  
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: italic 48px 'Bad Weather';
+            border-radius: 5px;
+        }
+        .topnav a:nth-child(1){
+            padding-right: 30px;
+        }
+        .topnav a:nth-child(4){
+            margin-left: 886px;
+        }
+        .topnav a:hover {
+            transition-duration: 300ms;
+            background-color: rgb(126, 88, 129);
+            color: black;
+        }
+        .topnav .search-container {
+            float: left;
+        }
+        .topnav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .topnav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+/* ------------------------------ */
+
+div input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: solid 1px black;
+    border-radius: 15px;
+    width: 100%;
+    transition-duration: 300ms;
+    -moz-box-shadow: rgb(0,0,0) 0px 0px 0px 0px; /*color x y radio tipo*/
+    -webkit-box-shadow: rgb(0,0,0) 1px 1px 2px 3px;
+    box-shadow: rgb(0,0,0) 1px 1px 2px 3px;
+  }
+
+#cabecera{
+    /* margin: 5%; */
+    padding: 6em;
+    background-size: 10%;
+    background-position-y: 30px;
+    background-position-x: 30px;
+    background: linear-gradient(rgb(120, 0, 131), rgb(255,255,255));
+    padding-bottom: 30px;
+    padding-top: 4em;
+}
+#tabla{
+    margin: auto;
+    margin-top: 50px;
+}
+
+  /*CLASSES*/
+  
+  
+  
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    margin: 20px;
+    float: left;
+    margin-left: 80px;
+}.card img{
+    width: 50%;
+    height: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.card-content {
+    background: linear-gradient(rgba(209, 209, 209, 0.692), rgb(255,255,255));
+    padding: 2px 16px;
+    float: left;
+}
+
+    /*PREVIOUS - NEXT*/
+    #izquierda{
+        float: left;
+        clear: both;
+        transform: translateY(-350px);
+        padding-left: 20px;
+    }#izquiera:hover{
+        transition: 300ms;
+        background-color: bisque;
+    }
+    #derecha{
+        /* float: right;
+        clear: both; */
+        transform: translateY(350px);
+        padding-right: 20px;
+    }
+    aside button {
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 16px;
+        border: none;
+    }
+    
+     aside button:hover {
+         transition-duration: 300ms;
+        background-color: rgb(221, 221, 221);
+        color: black;
+    }
+    
+    .previous {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    
+    .next {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .round {
+        border-radius: 50%;
+    }
+  
+  /* @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    } */
+
+/* Custom Fonts */
+@font-face{
+    font-family: 'Chicago 3D';
+    src: url('../fonts/Chicago3D.ttf');
+}
+@font-face{
+    font-family: 'Bad Weather';
+    src: url('../fonts/BadWeatherDemo.ttf');
+}
+@font-face{
+    font-family: 'Blackout';
+    src: url('../fonts/BLACKOUT.ttf');
+}
+@font-face{
+    font-family: 'Chicago';
+    src: url('../fonts/Chicago.ttf');
+}
+@font-face{
+    font-family: 'Chicago 3D Italic';
+    src: url('../fonts/Chicago3D-Italic');
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon';
+    src: url('../fonts/ChicagoBrightNeon3D.ttf')
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon Italic';
+    src: url('../fonts/ChicagoBrightNeon3D-Italic');
+}

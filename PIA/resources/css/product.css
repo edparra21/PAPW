@@ -1,0 +1,139 @@
+/* wrapper {
+    display: flex;
+    width: 100%;
+} */
+header, section, nav, aside, footer{
+    display: block;
+}
+#sidebar {
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: rgba(141, 77, 48, 0.712);
+    color: #fff;
+    transition: all 0.3s;
+    border-radius: 10px;
+    padding-left: 15px;
+    transform: translateX(-10px);
+}#sidebar li {
+    margin: 30% 0px 30% 10%;
+/* margin-top: 30%; */
+}#sidebar li a{
+    color: white;
+    font: italic 16px 'Arial';
+    text-shadow: rgba(0, 0, 0,0.5) 5px 5px 7px; /*color x y radio*/
+}#sidebar li a:hover{
+    text-decoration: none;
+    transition-duration: 0.3s;
+    font: italic 26px 'Arial';
+}
+#signup{
+    margin-top: 30%;
+}
+#homeSubmenu li{
+    margin: 0px;
+    padding-left: 15px;
+    /* padding: -30 0px -30px 0px; */
+}
+
+
+/* Content */
+    /* Header */
+    .sidebar-header{
+        margin-bottom: 50%;
+    }
+    #header{
+        background-image: url('../img/fondo3.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-y: 50%;
+    }
+#logo{
+    margin-left: 45%;
+}
+#usr{
+    width: 80%;
+    transform: translateX(22%);
+    /* margin-top: 15%; */
+}
+
+.form-control:not(hover){
+    transition-duration: 0.3s;
+    box-shadow: 6px 6px 10px black;
+}.form-control:hover{
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 5px black;
+}
+
+#seccion{
+    margin: 10% 20% auto;
+}
+
+.gallery-wrap .img-big-wrap img {
+    height: 450px;
+    width: auto;
+    display: inline-block;
+    cursor: zoom-in;
+}
+
+
+.gallery-wrap .img-small-wrap .item-gallery {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 7px 2px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.gallery-wrap .img-small-wrap {
+    text-align: center;
+}
+.gallery-wrap .img-small-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: zoom-in;
+}
+
+
+
+#pie{
+    text-align: right;
+    padding-right: 20px;
+}
+
+
+/* Custom Fonts */
+@font-face{
+    font-family: 'Chicago 3D';
+    src: url('../fonts/Chicago3D.ttf');
+}
+@font-face{
+    font-family: 'Bad Weather';
+    src: url('../fonts/BadWeatherDemo.ttf');
+}
+@font-face{
+    font-family: 'Blackout';
+    src: url('../fonts/BLACKOUT.ttf');
+}
+@font-face{
+    font-family: 'Chicago';
+    src: url('../fonts/Chicago.ttf');
+}
+@font-face{
+    font-family: 'Chicago 3D Italic';
+    src: url('../fonts/Chicago3D-Italic');
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon';
+    src: url('../fonts/ChicagoBrightNeon3D.ttf')
+}
+@font-face{
+    font-family: 'Chicago 3D Bright Neon Italic';
+    src: url('../fonts/ChicagoBrightNeon3D-Italic');
+}
